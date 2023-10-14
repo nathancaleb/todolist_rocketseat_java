@@ -14,6 +14,7 @@ RUN apt-get install maven -y
 # mvn clean install vai construir o arquivo JAR
 RUN mvn clean install
 
+FROM openjdk:17-jdk-slim
 # Expor a porta 8080 da maquina virtual UBUNTU
 EXPOSE 8080
 
